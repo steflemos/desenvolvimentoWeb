@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 1 HTML</title>
+</head>
+<body>
+    <header>
+        <h1>Título da Página</h1>
+        <nav>
+            <a href="#bloco1">Bloco 1</a> |
+            <a href="#bloco2">Bloco 2</a>
+        </nav>
+    </header>
+
+    <main>
+        <section id="bloco1">
+            <h2>Bloco 1</h2>
+            <p>Primeiro bloco.</p>
+            <form action="#"  method="post">
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome"><br><br>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email"><br><br>
+    
+                <label for="assunto">Assunto:</label>
+                <input type="text" id="assunto" name="assunto"><br><br>
+    
+                <label for="mensagem">Mensagem:</label>
+                <textarea id="mensagem" name="mensagem"></textarea><br><br>
+    
+                <label for="pais">País:</label>
+                <select id="pais" name="pais">
+                    <option value="">Selecione</option>
+                    <option value="Brasil">Brasil</option>
+                    <option value="Portugal">Alemanha</option>
+                    <option value="Estados Unidos">Estados Unidos</option>
+                </select>
+    
+                <button type="submit">Salvar</button>
+                <button type="reset">Limpar</button>
+            </form>
+        </section>
+
+        <section id="bloco2">
+            <h2>Bloco 2</h2>
+            <p>Segundo bloco.</p>
+            <figure>
+                <label for="imagem1">imagem 1</label><br>
+                <img src="imagem1.jpg" alt="Imagem 1" width="200" height="200">
+              </figure>
+
+              <figure>
+                  <label for="imagem2">imagem 2</label><br>
+                <img src="imagem2.jpg" alt="Imagem 2" width="200" height="200">
+              </figure>
+
+              <label for="video">Video</label><br>
+              <video width="320" height="240" controls>
+                <source src="video.mp4" type="video/mp4">
+              </video>
+              <br><br>
+
+              <label for="audio">Áudio</label><br>
+              <audio controls>
+                <source src="audio.mp3" type="audio/mpeg">
+              </audio>
+        </section>
+    </main>
+
+    <footer>
+        <p>Stéfani &copy; 2024</p>
+      </footer>
+    
+</body>
+</html>
