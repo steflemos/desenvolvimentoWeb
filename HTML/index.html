@@ -3,33 +3,45 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="style.css" rel="stylesheet">
     <title>Aula 1 HTML</title>
 </head>
 <body>
-    <header>
+    <header class="">
         <h1>Título da Página</h1>
         <nav>
-            <a href="#bloco1">Bloco 1</a> |
-            <a href="#bloco2">Bloco 2</a>
+            <div class="teste">
+                <a href="#bloco1" class="styleBloco">Bloco 1</a>
+            </div>
+            <div class="teste">
+            <a href="#bloco2" class="styleBloco">Bloco 2</a>
+             </div>
         </nav>
     </header>
 
     <main>
-        <section id="bloco1">
+        <section id="bloco1" >
+
+              <div class="imagem1">
+                <img src="imagem1.jpg" alt="Imagem 1" class="kellokitty">
+              </div>
+
+              <div class="formulario">
             <h2>Bloco 1</h2>
             <p>Primeiro bloco.</p>
+            
             <form action="#"  method="post">
-                <label for="nome">Nome:</label>
-                <input type="text" id="nome" name="nome"><br><br>
+                <label for="nome" class="name">Nome:</label>
+                <input type="text" id="nome" name="nome">
 
                 <label for="email">Email:</label>
-                <input type="email" id="email" name="email"><br><br>
+                <input type="email" id="email" name="email">
     
                 <label for="assunto">Assunto:</label>
-                <input type="text" id="assunto" name="assunto"><br><br>
+                <input type="text" id="assunto" name="assunto">
     
                 <label for="mensagem">Mensagem:</label>
-                <textarea id="mensagem" name="mensagem"></textarea><br><br>
+                <textarea id="mensagem" name="mensagem"></textarea>
     
                 <label for="pais">País:</label>
                 <select id="pais" name="pais">
@@ -41,29 +53,30 @@
     
                 <button type="submit">Salvar</button>
                 <button type="reset">Limpar</button>
-            </form>
+              </form>
+            </div>
         </section>
 
         <section id="bloco2">
             <h2>Bloco 2</h2>
             <p>Segundo bloco.</p>
             <figure>
-                <label for="imagem1">imagem 1</label><br>
+                <label for="imagem1">imagem 1</label>
                 <img src="imagem1.jpg" alt="Imagem 1" width="200" height="200">
               </figure>
 
               <figure>
-                  <label for="imagem2">imagem 2</label><br>
+                  <label for="imagem2">imagem 2</label>
                 <img src="imagem2.jpg" alt="Imagem 2" width="200" height="200">
               </figure>
 
-              <label for="video">Video</label><br>
+              <label for="video">Video</label>
               <video width="320" height="240" controls>
                 <source src="video.mp4" type="video/mp4">
               </video>
-              <br><br>
+              
 
-              <label for="audio">Áudio</label><br>
+              <label for="audio">Áudio</label>
               <audio controls>
                 <source src="audio.mp3" type="audio/mpeg">
               </audio>
