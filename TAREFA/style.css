@@ -1,0 +1,245 @@
+
+html {
+	font-family: 'Open Sans', sans-serif;
+}
+
+body {
+	margin: 0;
+    background-color: #000;
+    background-size: 200%;
+    background-image: url("background.png");
+    background-repeat: no-repeat;
+}
+
+h1, h2, h3, h4, h5, p, span {
+	margin: 0;
+	color: #000000;
+}
+
+.container {
+    
+	max-width: 1920px;
+	width: 100%;
+	position: relative;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+
+.background{
+    width: 100%;
+    height: 100%;
+}
+
+/* hide on desktop */
+.nav-container .btn-menumobile {
+	display: none;
+}
+
+/* header */
+header {
+	position: relative;
+	top: 0;
+	height: auto;
+	width: 100%;
+}
+
+/* navbar */
+nav {
+	/* position: fixed; */
+	top: 0;
+	left: 0;
+	height: 100px;
+	width: 100%;
+	z-index: 1;
+	background-color: #000000de;
+}
+
+nav:after {
+	clear: both;
+	content: "";
+	display: block;
+}
+
+.nav-container {
+	max-width: 1200px;
+	position: relative;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.logostef{
+    width: 15% !important;
+    height: 15% !important;
+	margin-top: 20px;
+}
+
+.nav-container ul {
+	float: right;
+	height: 100px;
+	line-height: 100px;
+	margin: 0;
+}
+
+.nav-container ul li {
+	list-style: none;
+	float: left;
+	margin: 0 15px;
+}
+
+.nav-container li a {
+	text-decoration: none;
+    font-weight: bold;
+	color: #ffffff;
+	transition: .5s;
+}
+.nav-container .texteste a {
+	text-decoration: none;
+    font-weight: bold;
+	color: #ffffff;
+	transition: .5s;
+    background-color: #57366b;
+    padding:  10px 50px;
+    border-radius: 10px;
+}
+.texteste a:hover{
+    background-color: #f3a3ed;
+    border: 1px solid #000;
+}
+
+
+.nav-container li a:hover {
+	color: #ff05de;
+}
+
+/* ------------------------------------------------------------------- */
+/* Container holding the image and the text */
+.container21 {
+    position: relative;
+    color: white;
+  }
+  
+
+  .title1{
+    font-family:'Open Sans', sans-serif;
+    font-size: 35px;
+    color: #000;
+    font-weight: bold;
+  }
+  p{
+    font-family:'Open Sans', sans-serif;
+    text-align: end;
+    margin: 0px 80px 0 80px;
+    color:rgb(255, 255, 255);
+    font-weight: 600;
+    
+  }
+  .descricao{
+    font-size: 20px;
+    font-family:'Open Sans', sans-serif;
+    text-align: end;
+    line-height: 2rem;
+    margin: 0px 150px 0 80px;
+    color:rgb(255, 255, 255);
+    font-weight: 600;
+    
+  }
+  .descricao2{
+    font-size: 40px;
+    font-family:'Open Sans', sans-serif;
+    text-align: end;
+    margin-bottom: 30px;
+    color:rgb(255, 255, 255);
+    font-weight: 600;
+    
+  }
+
+  
+  /* Top right text */
+  .top-right {  
+    width: 50%;
+    height: 100%;
+    margin: auto;
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+ .container-description{
+    display: grid;
+    place-items: center;
+  }
+  /* ----------------- */
+
+  .like {
+    margin: 5rem 2rem;
+
+  }
+
+
+  .container-Comof {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+    }
+
+    .content {
+        background-color: #e4c5c47c;
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        padding: 20px;
+        border-radius: 2rem;
+        align-items: center;
+    
+    }
+    .title {
+        color: #110f0f;
+        font-size: 1.5rem;
+      }
+
+/* --------------- */
+      .grid {
+        display: grid;
+        background-color: #000;
+    }
+    
+    .itemlogo {
+        background-color: #57366b;
+        grid-area: logo;
+    }
+    
+    .itemnav {
+        background-color: #ff05de;
+        grid-area: nav;
+    }
+    
+    .itemcontent {
+        background-color: aqua;
+        grid-area: content;
+    }
+    
+    .itemsidenav {
+        background-color: #ffffff;
+        grid-area: sidenav;
+    }
+    
+    .itemadvert {
+        background-color: chartreuse;
+        grid-area: advert;
+    }
+    
+    .itemfooter {
+        background-color: darkgray;
+        grid-area: footer;
+    }
+    
+    .grid-template-areas-1 {
+        grid-template-areas:
+            "logo nav nav"
+            "sidenav content advert"
+            "sidenav footer footer"
+            ;
+    }
